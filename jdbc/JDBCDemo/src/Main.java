@@ -82,6 +82,12 @@ public class Main {
 
         ps.execute();
 
+        /*Note:
+        execute() → Any SQL statement; returns boolean
+        executeUpdate() → INSERT, UPDATE, DELETE; returns affected row count.
+        executeQuery() → SELECT; returns ResultSet.
+        */
+    
         conn.close();
         System.out.println("Connection closed");
     }
